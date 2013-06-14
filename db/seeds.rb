@@ -19,8 +19,7 @@ require "open-uri"
 #end
 
 @twilio_client = Twilio::REST::Client.new(
-  "AC79d251f9e5aecc4540eed6c3de0877cd",
-  "f87a93df444367acf7f497420e753a63"
+  ENV["TWILIO_ID"], ENV["TWILIO_SECRET"]
 )
 
 #if collect
